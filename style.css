@@ -171,6 +171,18 @@ header ul li a:hover,
     font-size: 1.2em;
     color: #fff;
 }
+.fullsize{
+    border: 11px solid;
+    z-index: 999;
+    cursor: zoom-out;
+    display: block;
+    width: 2160px;
+    max-width: 2160px;
+    height: 1520px;
+    position: fixed;
+    left: 400px;
+    top: 150px;
+}
 /*breakheads*/
 #break{
     background-color: #E54523;
