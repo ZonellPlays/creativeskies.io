@@ -159,6 +159,13 @@ header ul li a:hover,
     border: 5px solid;
     border-image-source: linear-gradient(0deg, #AE6BB0, #954641);
     border-image-slice: 1;
+
+}
+.sec .texthover{
+    opacity: 0;
+}
+.sec .texthover:hover{
+    opacity: 1;
 }
 .sec img:hover{
     border: 5px solid;
@@ -171,17 +178,18 @@ header ul li a:hover,
     font-size: 1.2em;
     color: #fff;
 }
-.fullsize{
-    border: 11px solid;
-    z-index: 999;
-    cursor: zoom-out;
-    display: block;
-    width: 2160px;
-    max-width: 2160px;
-    height: 1520px;
-    position: fixed;
-    left: 400px;
-    top: 150px;
+/*buttons*/
+header .homebtn button{
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #E54523;
+    color: #fff;
+}
+.sec button{
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #E54523;
+    color: #fff;
 }
 /*breakheads*/
 #break{
@@ -275,6 +283,36 @@ footer{
     pointer-events: auto;
     opacity: 1;
 }
+/*images.html*/
+.container{
+    align-items: center;
+    margin-top: 10%;
+}
+.img-area{
+    text-align: center;
+    color: #000000;
+    position: relative;
+}
+.img-area img{
+    width: 760px;
+    height: auto;
+}
+.img-text{
+    text-decoration: none;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.883);
+    border-radius: 10%;
+    position: absolute;
+    left: 25%;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(0);
+    transition: 0.2s;
+}
+.img-text:hover{
+    opacity: 0;
+}
 /*RESPONSIVE*/
 @media(max-width: 992px){
     .navbar .links {
@@ -303,6 +341,30 @@ footer{
     .about p{
         font-size: 18px;
     }
+    .container{
+        align-items: center;
+        margin-top: 15%;
+    }
+    .img-area img{
+        width: 380px;
+        height: auto;
+    }
+    .img-text{
+        text-decoration: none;
+        font-size: 12px;
+        width: 25%;
+        border-radius: 25%;
+        position: absolute;
+        left: 37%;
+        bottom: 0;
+        z-index: 1;
+        transform: translateY(0);
+    }
+    .latest{
+        display: auto;
+        font-size: 15px;
+        margin: 5px;
+    }
 }
 
 @media(max-width: 576px){
@@ -323,5 +385,16 @@ footer{
     }
     .about p{
         font-size: 18px;
+    }
+    .img-text{
+        text-decoration: none;
+        font-size: 11px;
+        width: 25%;
+        border-radius: 25%;
+        position: absolute;
+        left: 15%;
+        bottom: 0;
+        z-index: 1;
+        transform: translateY(0);
     }
 }
